@@ -1,1 +1,2 @@
-print("Hello, \nRuby\n!\n")
+puts "Hello,"
+puts "Ruby!"
