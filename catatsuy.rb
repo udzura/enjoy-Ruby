@@ -1,3 +1,3 @@
 loop {
-  puts "カタツイ".split(//).sample
+  print "カタツイ".split(//).sample
 }
