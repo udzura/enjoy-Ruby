@@ -1,6 +1,3 @@
-person = ARGV[0]
-person1 = ARGV[1]
-
 def conversation1
   "あなたはだれですか？"
 end
@@ -18,20 +15,28 @@ def conversation3(person)
   end
 end
 
-#ここからしたわからん
-#ARGV[1]がかえって（？）こない、何故
-
 def conversation4(hobby)
   case hobby 
-  when /"マリンスポーツ"/
+  when /マリンスポーツ/
   "#{hobby}です！"
+  else
+  "#{hobby}です！"
+ end
+end
+
+def conversation5(hobby)
+  case hobby
+  when /マリンスポーツ/
+  "なるほど！よろしくお願いします！"
   else
   "おや？あなたは別人ですね？"
  end
 end
+
 person = ARGV[0]
 hobby = ARGV[1]
 puts conversation1
 puts conversation2(person)
 puts conversation3(person)
 puts conversation4(hobby)
+puts conversation5(hobby)
