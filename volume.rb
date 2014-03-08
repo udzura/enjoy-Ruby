@@ -12,7 +12,7 @@ def volume(x, y, z)
   if z < 0
     return 0
   end
-
+#eachっぽいやつ。each,ifでもかけるけど、これが便利最高
   p "計算しています．しばらくおまちください"
   x * y * z
 end
