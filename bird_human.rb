@@ -44,3 +44,5 @@ p '動物図鑑です'
   p type
   p type.can_fly
 }
+
+File.rename("human_bird.rb","bird_human.rb")
